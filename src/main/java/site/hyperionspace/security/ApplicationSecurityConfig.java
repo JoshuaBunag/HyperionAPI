@@ -31,7 +31,7 @@ public class ApplicationSecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        var v1 = User.withUsername("Josh").password("Joshua_2002").authorities("read").build();
+        var v1 = User.withUsername("ReplaceWithOwnUsername").password("ReplaceWithOwnPassword").authorities("read").build();
 
         var uds = new InMemoryUserDetailsManager();
         uds.createUser(v1);
